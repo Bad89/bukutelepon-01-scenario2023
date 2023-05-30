@@ -1,11 +1,15 @@
 ## Buku Telepon tes 01 DIGIREC badeasaputro@gmail.com 
 
-- source venv/bin/activate - why "connect or in enviroment"
-- pip install flask "error use //echo adjust your OS'
+- git --version
+- git clone https://github.com/Bad89/bukutelepon-01-scenario2023.git
+
+- text on screen "source venv/bin/activate"  (why "connect or in enviroment")
+- pip install flask ("error use //echo adjust your OS")
 
 - running code:
 run: 
 export FLASK_APP=bukutelepon.py
 flask run
 
-- seen Running on http://127.0.0.1:5000 in terminal 'click on : http://127.0.0.1:5000'
+- seen Running on http://127.0.0.1:5000 in terminal
+    -------->  'click on : http://127.0.0.1:5000'
