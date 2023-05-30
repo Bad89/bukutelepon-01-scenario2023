@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buku Telepon</title>
+</head>
+<body>
+    <h1>
+        badeasaputro@gmail.com
+        <br>
+        Buku Telepon
+    </h1>
+    <form action="/" method="POST">
+        <label for="name">Nama:</label>
+        <input type="text" name="name" required>
+        <label for="phone_number">Nomor Telepon:</label>
+        <input type="text" name="phone_number" required>
+        <button type="submit">Tambah Kontak</button>
+    </form>
+    <h2>Daftar Kontak</h2>
+    <ul>
+    {% for contact in contacts %}
+        <li>{{ contact.name }} - {{ contact.phone_number }} <a href="/remove/{{ contact.name }}">Hapus</a></li>
+    {% endfor %}
+    </ul>
+    <h2>Cari Kontak</h2>
+    <form action="/search" method="POST">
+        <label for="name">Nama:</label>
+        <input type="text" name="name" required>
+        <button type="submit">Cari 'masukan terlebih dahulu nomor dan nama' dan 'lakukan tambah kontak'</button>
+    </form>
+</body>
+</html>

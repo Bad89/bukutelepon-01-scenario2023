@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buku Telepon - Hasil Pencarian</title>
+</head>
+<body>
+    <h1>Hasil Pencarian</h1>
+    {% if result != "Kontak tidak ditemukan" %}
+        <p>Nomor Telepon untuk Kontak <strong>{{ name }}</strong>: {{ result }}</p>
+    {% else %}
+        <p>Kontak tidak ditemukan</p>
+    {% endif %}
+    <a href="/">Kembali</a>
+</body>
+</html>
